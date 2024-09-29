@@ -15,13 +15,11 @@ function App() {
           />
         </header>
       </div>
-
-        <div className='task-list'>
-          <h1>Mis tareas</h1>
-            <TaskList />
-        </div>
-        
-      </div>
+      <div className='task-list'>
+        <h1>Mis tareas</h1>
+          <TaskList />
+      </div> 
+    </div>
   );
 }
 

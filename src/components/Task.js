@@ -14,7 +14,6 @@ function Task({id, text, completed, taskComplet, taskDelete}){
       <div 
         className='container-icons-task'
         onClick={() => taskDelete(id)}>
-          {text}
         <AiOutlineCloseCircle className='task-icon' />
       </div>
     </div>

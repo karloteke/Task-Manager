@@ -11,6 +11,20 @@
     border: 1px solid white;
     cursor: pointer
 }
+
+/* DEGRADADO COLORES TAREAS */
+
+.container-task:nth-child(3n + 1){
+    background-color: #33336d;
+}
+
+.container-task:nth-child(3n + 2){
+    background-color: #323292;
+}
+
+.container-task:nth-child(3n + 3){
+    background-color: #3535c6;
+}
     
 .text-task{
     width: 100%;
@@ -31,6 +45,6 @@
 /* Tarea completada */
 
 .container-task.completed{
-    background-color: violet;
+    background-color:#8be0fa ;
     text-decoration: line-through;
 }

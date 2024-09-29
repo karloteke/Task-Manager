@@ -12,10 +12,10 @@ function FormTask(props){
 
   const send = e => {
    
-      //no se vuelve a cargar toda la aplicacion al mandar el formulario
-      e.preventDefault();
+    //no se vuelve a cargar toda la aplicacion al mandar el formulario
+    e.preventDefault();
       
-      const newTask = {
+    const newTask = {
       id: uuidv4(),
       text: input,
       completed: false
@@ -27,22 +27,22 @@ function FormTask(props){
     setInput('');
   };
 
-      return(
-      <form
-         className="task-form"
-         onSubmit={send}>
-          <input
-            className="task-input"
-            type="text"
-            placeholder="Escribe una tarea"
-            name="text"
-            onChange={change}
-          />
-          <button className="task-button">
-            Agregar Tarea
-          </button>
-      </form>
-    );
+    return(
+    <form
+        className="task-form"
+        onSubmit={send}>
+        <input
+          className="task-input"
+          type="text"
+          placeholder="Escribe una tarea"
+          name="text"
+          onChange={change}
+        />
+        <button className="task-button">
+          Agregar Tarea
+        </button>
+    </form>
+  );
 }
 
 export default FormTask;
